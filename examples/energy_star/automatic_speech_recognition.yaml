@@ -28,6 +28,10 @@ benchmark:
 
 # hydra/cli specific settings
 hydra:
+   mode: MULTIRUN
+  sweeper:
+    params:
+      backend.model:
   run:
     # where to store run results
     dir: runs/${experiment_name}
